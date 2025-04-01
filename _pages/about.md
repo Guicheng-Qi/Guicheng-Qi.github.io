@@ -27,7 +27,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a PhD student in Computer Science at the University of Hong Kong, advised by [Prof. Chuan Wu](https://i.cs.hku.hk/~cwu/). My research focuses on distributed machine learning systems, with a particular interest in optimizing training efficiency, scalability, and performance for large-scale machine learning workloads.
+I am a PhD student in the School of Computing and Data Science at [The University of Hong Kong](https://www.cs.hku.hk/), advised by [Prof. Chuan Wu](https://i.cs.hku.hk/~cwu/). My research focuses on distributed machine learning systems, with a particular interest in optimizing training efficiency, scalability, and performance for large-scale machine learning workloads.
 
 Prior to joining HKU, I received my Bachelor's degree from the Department of Electronic Engineering at [Tsinghua University](https://www.ee.tsinghua.edu.cn/).
 
