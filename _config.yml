@@ -5,7 +5,7 @@
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Guicheng
 middle_name:
-last_name: Qi
+last_name: Qi (桂城 戚)
 contact_note: >
   The best way to reach me is via email. I typically respond within 24 hours.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -16,6 +16,10 @@ footer_text: >
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 keywords:  # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
+encoding: "utf-8"
+languages:
+  - en
+  - zh
 icon:  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://Guicheng-Qi.github.io # the base hostname & protocol for your site
@@ -124,12 +128,12 @@ giscus:
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
 external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
+  #- name: medium.com
+  #  rss_url: https://medium.com/@al-folio/feed
+  #- name: Google Blog
+  #  posts:
+  #    - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
+  #      published_date: 2024-05-14
 
 # -----------------------------------------------------------------------------
 # Newsletter
@@ -257,8 +261,8 @@ jekyll-archives:
   books:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
 
-display_tags: ["distributed-systems", "machine-learning", "photography", "skateboarding", "coffee"] # these tags will be displayed on the front page of your blog
-display_categories: ["research", "life", "tech"] # these categories will be displayed on the front page of your blog
+# display_tags: ["distributed-systems", "machine-learning", "photography", "skateboarding", "coffee"] # these tags will be displayed on the front page of your blog
+# display_categories: ["research", "life", "tech"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar

@@ -2,16 +2,16 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: #PhD Student in School of Computing and Data Science at <a href='https://www.cs.hku.hk/'>The University of Hong Kong</a>
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: gcqi_tw.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>School of CDS</p>
+    <p>The University of Hong Kong</p>
+    <p>Pokfulam, Hong Kong</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,8 +27,18 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a PhD student in Computer Science at the University of Hong Kong, advised by [Prof. Chuan Wu](https://i.cs.hku.hk/~cwu/). My research focuses on distributed machine learning systems, with a particular interest in optimizing training efficiency, scalability, and performance for large-scale machine learning workloads.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Prior to joining HKU, I received my Bachelor's degree from the Department of Electronic Engineering at [Tsinghua University](https://www.ee.tsinghua.edu.cn/).
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+
+## Education
+
+- **PhD in Computer Science**, The University of Hong Kong, 2023-Present
+- **Bachelor of Electronic Engineering**, Tsinghua University, 2019-2023
+
+## Personal Interests
+
+Outside of research, I enjoy [photography](https://www.xiaohongshu.com/user/profile/610029a20000000001001b17), [skateboarding](https://www.xiaohongshu.com/user/profile/610029a20000000001001b17), and [coffee](https://www.xiaohongshu.com/user/profile/610029a20000000001001b17).
+
+Feel free to reach out if you're interested in collaborating or just want to chat about research, tech, or any of my hobbies!
