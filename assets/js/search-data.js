@@ -34,15 +34,18 @@ ninja.data = [{
             window.location.href = "/blog/2025/photo-sharing/";
           
         },
-      },{id: "news-my-first-work-eccheck-enhancing-in-memory-checkpoint-with-erasure-coding-in-distributed-dnn-training-is-accepted-to-icdcs-2025",
+      },{id: "news-my-first-work-eccheck-enhancing-in-memory-checkpoint-with-erasure-coding-in-distributed-dnn-training-has-been-accepted-to-icdcs-2025",
           title: 'My first work “ECCheck: Enhancing In-Memory Checkpoint with Erasure Coding in Distributed DNN...',
+          description: "",
+          section: "News",},{id: "news-my-work-hetauto-cross-cluster-auto-parallelism-for-heterogeneous-distributed-training-in-collaboration-with-meituan-has-been-accepted-to-eurosys-2026",
+          title: 'My work “HetAuto: Cross-Cluster Auto-Parallelism for Heterogeneous Distributed Training,” in collaboration with Meituan,...',
           description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%75%33%30%31%30%32%37%34@%63%6F%6E%6E%65%63%74.%68%6B%75.%68%6B", "_blank");
+          window.open("mailto:%67%75%69%63%68%65%6E%67_%71%69@%63%6F%6E%6E%65%63%74.%68%6B%75.%68%6B", "_blank");
         },
       },{
         id: 'social-github',
