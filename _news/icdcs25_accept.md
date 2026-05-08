@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-My first work ["ECCheck: Enhancing In-Memory Checkpoint with Erasure Coding in Distributed DNN Training"](https://i.cs.hku.hk/~cwu/papers/gcqi-icdcs25.pdf) has been accepted to ICDCS 2025 😊
+My first work "[ECCheck: Enhancing In-Memory Checkpoint with Erasure Coding in Distributed DNN Training](https://i.cs.hku.hk/~cwu/papers/gcqi-icdcs25.pdf)" has been accepted to ICDCS 2025 😊

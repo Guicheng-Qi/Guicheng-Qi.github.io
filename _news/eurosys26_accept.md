@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-My work "HetAuto: Cross-Cluster Auto-Parallelism for Heterogeneous Distributed Training," in collaboration with Meituan, has been accepted to EuroSys 2026.
+My work "[HetAuto: Cross-Cluster Auto-Parallelism for Heterogeneous Distributed Training](https://i.cs.hku.hk/~cwu/papers/gcqi-eurosys26.pdf)," in collaboration with Meituan, has been accepted to EuroSys 2026.
