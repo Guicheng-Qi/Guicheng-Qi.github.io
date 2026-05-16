@@ -27,7 +27,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a PhD student in the School of Computing and Data Science at [The University of Hong Kong](https://www.cs.hku.hk/), advised by [Prof. Chuan Wu](https://i.cs.hku.hk/~cwu/). My research focuses on distributed machine learning systems, with a particular interest in optimizing training efficiency, scalability, and performance for large-scale machine learning workloads.
+I am a PhD student in the School of Computing and Data Science at [The University of Hong Kong](https://www.cs.hku.hk/), advised by [Prof. Chuan Wu](https://i.cs.hku.hk/~cwu/). My research focuses on distributed machine learning systems, with a particular interest in optimizing efficiency, scalability, and robustness for large-scale distributed model training workloads.
 
 Prior to joining HKU, I received my Bachelor's degree from the Department of Electronic Engineering at [Tsinghua University](https://www.ee.tsinghua.edu.cn/).
 
@@ -39,6 +39,6 @@ Prior to joining HKU, I received my Bachelor's degree from the Department of Ele
 
 ## Personal Interests
 
-Outside of research, I enjoy [photography](https://www.xiaohongshu.com/user/profile/610029a20000000001001b17), [skateboarding](https://www.xiaohongshu.com/user/profile/610029a20000000001001b17), and [coffee](https://www.xiaohongshu.com/user/profile/610029a20000000001001b17).
+Outside of research, I enjoy [photography](https://www.xiaohongshu.com/user/profile/610029a20000000001001b17), and [skateboarding](https://www.xiaohongshu.com/user/profile/610029a20000000001001b17).
 
 Feel free to reach out if you're interested in collaborating or just want to chat about research, tech, or any of my hobbies!
