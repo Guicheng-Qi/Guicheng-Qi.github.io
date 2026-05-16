@@ -34,8 +34,12 @@ Prior to joining HKU, I received my Bachelor's degree from the Department of Ele
 
 ## Education
 
-- **PhD in Computer Science**, The University of Hong Kong, 2023-Present
-- **Bachelor of Electronic Engineering**, Tsinghua University, 2019-2023
+- **PhD in Computer Science**, The University of Hong Kong, 2023 - Present
+- **Bachelor of Electronic Engineering**, Tsinghua University, 2019 - 2023
+
+## Experience
+- **Research Intern**, Infra Team, Meituan, Feb. 2025 - Present
+
 
 ## Personal Interests
 
