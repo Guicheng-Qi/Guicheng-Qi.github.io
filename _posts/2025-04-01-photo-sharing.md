@@ -1,5 +1,7 @@
 ---
 layout: post
+math: false
+masonry: false
 title: Photo Sharing (1)
 date: 2025-03-29 18:40:00
 description: 

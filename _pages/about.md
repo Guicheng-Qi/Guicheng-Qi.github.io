@@ -2,11 +2,16 @@
 layout: about
 title: about
 permalink: /
+math: false
+masonry: false
 subtitle: #PhD Student in School of Computing and Data Science at <a href='https://www.cs.hku.hk/'>The University of Hong Kong</a>
 
 profile:
   align: right
-  image: gcqi_tw.jpg
+  image: gcqi_tw-profile.jpg
+  image_webp: assets/img/gcqi_tw-profile.webp
+  image_width: 560
+  image_height: 827
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>School of CDS</p>

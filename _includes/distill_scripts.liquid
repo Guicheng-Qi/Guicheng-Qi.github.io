@@ -1,14 +1,16 @@
 <!-- jQuery -->
 <script
-  src="{{ site.third_party_libraries.jquery.url.js }}"
+  defer
+  src="{{ site.third_party_libraries.jquery.url.js | relative_url }}"
   integrity="{{ site.third_party_libraries.jquery.integrity.js }}"
   crossorigin="anonymous"
 ></script>
 
 <!-- Bootsrap & MDB scripts -->
-<script src="{{ '/assets/js/bootstrap.bundle.min.js' | relative_url }}"></script>
+<script defer src="{{ '/assets/js/bootstrap.bundle.min.js' | relative_url }}"></script>
 <script
-  src="{{ site.third_party_libraries.mdb.url.js }}"
+  defer
+  src="{{ site.third_party_libraries.mdb.url.js | relative_url }}"
   integrity="{{ site.third_party_libraries.mdb.integrity.js }}"
   crossorigin="anonymous"
 ></script>
@@ -132,10 +134,10 @@
 
 {% if site.enable_tooltips %}
   <!-- Tooltips -->
-  <script src="{{ '/assets/js/tooltips-setup.js' | relative_url | bust_file_cache }}"></script>
+  <script defer src="{{ '/assets/js/tooltips-setup.js' | relative_url | bust_file_cache }}"></script>
 {% endif %}
 
-{% if site.enable_medium_zoom %}
+{% if site.enable_medium_zoom and content contains 'data-zoomable' %}
   <!-- Medium Zoom JS -->
   <script
     defer
@@ -163,16 +165,20 @@
 {% endif %}
 
 <!-- Load Common JS -->
-<script src="{{ '/assets/js/no_defer.js' | relative_url | bust_file_cache }}"></script>
+<script defer src="{{ '/assets/js/no_defer.js' | relative_url | bust_file_cache }}"></script>
 <script defer src="{{ '/assets/js/common.js' | relative_url | bust_file_cache }}"></script>
-<script defer src="{{ '/assets/js/copy_code.js' | relative_url | bust_file_cache }}" type="text/javascript"></script>
+{% if content contains 'highlight' %}
+  <script defer src="{{ '/assets/js/copy_code.js' | relative_url | bust_file_cache }}" type="text/javascript"></script>
+{% endif %}
 
-<!-- Jupyter Open External Links New Tab -->
-<script defer src="{{ '/assets/js/jupyter_new_tab.js' | relative_url | bust_file_cache }}"></script>
+{% if content contains 'jupyter-notebook-iframe' %}
+  <!-- Jupyter Open External Links New Tab -->
+  <script defer src="{{ '/assets/js/jupyter_new_tab.js' | relative_url | bust_file_cache }}"></script>
+{% endif %}
 
 <!-- Removed Badges -->
 
-{% if site.enable_math %}
+{% if site.enable_math and page.math != false %}
   <!-- MathJax -->
   <script
     defer
@@ -183,11 +189,6 @@
     crossorigin="anonymous"
   ></script>
   <script src="{{ '/assets/js/mathjax-setup.js' | relative_url | bust_file_cache }}"></script>
-  <script
-    defer
-    src="{{ site.third_party_libraries.polyfill.url.js }}"
-    crossorigin="anonymous"
-  ></script>
   <!-- Removed Pseudocode -->
 {% endif %}
 
@@ -285,7 +286,7 @@
   <!-- Search -->
   <script type="module" src="{{ '/assets/js/search/ninja-keys.min.js' | relative_url | bust_file_cache }}"></script>
   <ninja-keys hideBreadcrumbs noAutoLoadMdIcons placeholder="Type to start searching"></ninja-keys>
-  <script src="{{ '/assets/js/search-setup.js' | relative_url | bust_file_cache }}"></script>
-  <script src="{{ '/assets/js/search-data.js' | relative_url }}"></script>
-  <script src="{{ '/assets/js/shortcut-key.js' | relative_url | bust_file_cache }}"></script>
+  <script defer src="{{ '/assets/js/search-setup.js' | relative_url | bust_file_cache }}"></script>
+  <script defer src="{{ '/assets/js/search-data.js' | relative_url }}"></script>
+  <script defer src="{{ '/assets/js/shortcut-key.js' | relative_url | bust_file_cache }}"></script>
 {% endif %}

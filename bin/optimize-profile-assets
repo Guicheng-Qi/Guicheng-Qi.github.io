@@ -1,0 +1,34 @@
+#!/usr/bin/env python3
+"""Regenerate checked-in profile assets (ImageMagick, fonttools and brotli required)."""
+from pathlib import Path
+import subprocess
+from fontTools import subset
+from fontTools.ttLib import TTFont
+
+root = Path(__file__).resolve().parents[1]
+image = root / 'assets/img/gcqi_tw.jpg'
+for extension, options in [
+    ('webp', ['-quality', '76']),
+    ('jpg', ['-sampling-factor', '4:2:0', '-interlace', 'Plane', '-quality', '80']),
+]:
+    subprocess.run(['magick', str(image), '-auto-orient', '-strip', '-resize', '560x>',
+                    *options, str(image.with_name('gcqi_tw-profile.' + extension))], check=True)
+
+for source, name, unicodes in [
+    ('fonts/tabler-icons.woff2', 'profile-tabler', [0xeb1c, 0xf4a3, 0xf684, 0xf6a9]),
+    ('webfonts/fa-brands-400.woff2', 'profile-brands', [0xf09b, 0xf08c]),
+    ('webfonts/fa-solid-900.woff2', 'profile-solid', [0xf0e0]),
+]:
+    font = TTFont(root / 'assets' / source)
+    # Icon glyphs do not need text shaping tables. Some older fontTools
+    # versions cannot parse the bundled Tabler shaping tables.
+    for table in ['GSUB', 'GPOS', 'GDEF']:
+        if table in font:
+            del font[table]
+    options = subset.Options()
+    options.flavor = 'woff2'
+    options.name_IDs = ['*']
+    subsetter = subset.Subsetter(options=options)
+    subsetter.populate(unicodes=unicodes)
+    subsetter.subset(font)
+    font.save(root / 'assets/fonts' / (name + '.woff2'))

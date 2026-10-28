@@ -1,11 +1,15 @@
 <!-- Metadata, OpenGraph and Schema.org -->
 {% include metadata.liquid %}
 
+{% if page.profile.image_webp %}
+  <link rel="preload" as="image" type="image/webp" fetchpriority="high" href="{{ page.profile.image_webp | relative_url | bust_file_cache }}">
+{% endif %}
+
 <!-- Bootstrap & MDB -->
 <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | relative_url | bust_file_cache }}">
 <link
   rel="stylesheet"
-  href="{{ site.third_party_libraries.mdb.url.css }}"
+  href="{{ site.third_party_libraries.mdb.url.css | relative_url }}"
   integrity="{{ site.third_party_libraries.mdb.integrity.css }}"
   crossorigin="anonymous"
 >
@@ -28,7 +32,7 @@
   defer
   rel="stylesheet"
   type="text/css"
-  href="{{ site.third_party_libraries.google_fonts.url.fonts }}"
+  href="{{ site.third_party_libraries.google_fonts.url.fonts | relative_url | bust_file_cache }}"
 >
 
 <!-- Code Syntax Highlighting -->

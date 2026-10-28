@@ -1,0 +1,27 @@
+// Small subsets for the shared navigation and current social links. Other icons
+// keep the original fonts, so adding a new icon does not require a rebuild here.
+@font-face {
+  font-family: 'profile-tabler';
+  src: url('../fonts/profile-tabler.woff2') format('woff2');
+  font-display: block;
+}
+@font-face {
+  font-family: 'profile-brands';
+  src: url('../fonts/profile-brands.woff2') format('woff2');
+  font-display: block;
+}
+@font-face {
+  font-family: 'profile-solid';
+  src: url('../fonts/profile-solid.woff2') format('woff2');
+  font-weight: 900;
+  font-display: block;
+}
+.ti-search, .ti-sun-moon, .ti-moon-filled, .ti-sun-filled {
+  font-family: 'profile-tabler' !important;
+}
+.fa-brands.fa-github, .fa-brands.fa-linkedin {
+  font-family: 'profile-brands';
+}
+.fa-solid.fa-envelope {
+  font-family: 'profile-solid';
+}
